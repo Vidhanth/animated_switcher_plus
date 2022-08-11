@@ -101,9 +101,6 @@ AnimatedSwitcherTransitionBuilder _transitionBuilder(Offset offset) =>
           begin: isReversed ? offset.scale(-1, -1) : offset,
           end: Offset.zero,
         ).animate(animation),
-        child: FadeTransition(
-          opacity: animation,
-          child: child,
-        ),
+        child: child,
       );
     };
